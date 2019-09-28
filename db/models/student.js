@@ -27,7 +27,7 @@ const Student = db.define('student', {
   },
 });
 
-Student.beforeCreate(student => {
+Student.beforeValidate(student => {
   const nameFirst = student.firstName;
   const nameLast = student.lastName;
 
